@@ -2,11 +2,11 @@
 #include<cs50.h>
 void swap_max(int arr[], int l, int n)
 { int max=arr[n];
-  int position;
-  for(int i=0;i<l;i++)
+  int position,i;
+  for(i=0;i<l;i++)
   { if(arr[i]>max)
         {max=arr[i];
-         positon=i;
+         position=i;
         }
    }
   arr[position]=arr[n];
