@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<cs50.h>
 void swap_max(int arr[], int l, int n)
-{ int max=arr[n];
+{ int max=arr[n],temp;
   int position=n,i;
   for(i=0;i<l;i++)
   { if(arr[i]>max)
@@ -9,8 +9,9 @@ void swap_max(int arr[], int l, int n)
          position=i;
         }
    }
-  arr[position]=arr[n];
-  arr[n]=max;
+  temp=arr[position];
+  arr[position]=arr[n]
+  arr[n]=temp;
  } 
  
  
