@@ -2,7 +2,7 @@
 #include<cs50.h>
 void swap_max(int arr[], int l, int n)
 { int max=arr[n];
-  int position,i;
+  int position=n,i;
   for(i=0;i<l;i++)
   { if(arr[i]>max)
         {max=arr[i];
